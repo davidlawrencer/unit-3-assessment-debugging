@@ -93,3 +93,12 @@ Using Postman and the endpoint below verify that you have favorited an element.
 ```
 GET https://5d83bc5ebaffda001476aa88.mockapi.io/api/v1/favorites
 ```
+
+## Bonus 
+
+Get all favorites endpoint
+```
+GET https://5d83bc5ebaffda001476aa88.mockapi.io/api/v1/favorites
+```
+
+Embed your ElementsViewController in a Tab Bar controller that has 2 viewcontrollers that includes the ElementsViewController. The first view controller should display the Elements. The second view controller should display only the Elements you have favorited. (Hint: filter{} using favoritedBy: "Your name")
