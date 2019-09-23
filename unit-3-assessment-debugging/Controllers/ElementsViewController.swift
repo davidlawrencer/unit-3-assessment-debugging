@@ -27,6 +27,7 @@ class ElementsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        loadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +38,7 @@ class ElementsViewController: UIViewController {
         
         let element = elements[selectedIndex.row]
         
-        guard segue.identifier != "elementListToDetailSegue" else {
+        guard segue.identifier == "elementListToDetailSegue" else {
             showCouldntSegueAlert(element: element.name)
             return
         }
@@ -83,7 +84,7 @@ class ElementsViewController: UIViewController {
 extension ElementsViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -104,7 +105,9 @@ extension ElementsViewController: UITableViewDataSource {
                 switch result {
                 case .success(let image):
                     cell.thumbnailImage.image = image
+                    
                 case .failure(let error):
+                    print(imageURLString)
                     print(error)
                 }
             }

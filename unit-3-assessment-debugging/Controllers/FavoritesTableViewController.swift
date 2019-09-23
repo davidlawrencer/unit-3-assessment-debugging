@@ -24,7 +24,7 @@ class FavoritesTableViewController: UITableViewController {
     // MARK: - TableView data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

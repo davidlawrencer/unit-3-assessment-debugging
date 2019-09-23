@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unit-3-assessment-debugging/Controllers/FavoritesTableViewController.swift"
-            timestampString = "590880223.315115"
+            timestampString = "590967161.62072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unit-3-assessment-debugging/Controllers/FavoritesTableViewController.swift"
-            timestampString = "590880223.315276"
+            timestampString = "590967161.621061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>

@@ -214,6 +214,7 @@
                         <viewLayoutGuide key="safeArea" id="MZ7-gk-B5N"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="NcC-7x-kF1" id="4Fk-Gv-X0U"/>
                         <outlet property="boilingPointLabel" destination="72o-Dg-PCu" id="Glz-h4-Kca"/>
                         <outlet property="discoveredByLabel" destination="gHc-3r-gEy" id="oVB-Ez-Pcp"/>
                         <outlet property="elementImage" destination="xpa-PC-PXJ" id="gOm-Gd-k7l"/>
@@ -272,6 +273,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1P1-dH-joF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Clo-9d-Fhz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

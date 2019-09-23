@@ -9,17 +9,13 @@
 import Foundation
 
 struct Favorite: Codable {
-    let elementName: String
-    let favoriteBy: String
-    let elementSymbol: String
+    let elementName: String?
+    let favoritedBy: String?
+    let elementSymbol: String?
     
     static func decodeFavoritesFromJSON(from jsonData: Data) throws -> [Favorite] {
         let response = try JSONDecoder().decode([Favorite].self, from: jsonData)
         return response
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case elementName, favoriteBy, elementSymbol
     }
 
 }

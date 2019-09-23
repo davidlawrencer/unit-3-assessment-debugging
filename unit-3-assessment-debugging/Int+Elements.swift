@@ -10,9 +10,9 @@ import Foundation
 
 extension Int {
     func getStringForThumbnailImage() -> String {
-        if self > 10 {
+        if self < 10 {
             return "00\(self)"
-        } else if self > 100 {
+        } else if self < 100 {
             return "0\(self)"
         } else {
             return "\(self)"

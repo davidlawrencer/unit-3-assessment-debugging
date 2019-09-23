@@ -22,15 +22,15 @@ struct Element: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case atomicMass = "atomicmass"
+        case atomicMass = "atomic_mass"
         case meltingPoint = "melt"
         case boilingPoint = "boil"
-        case discoveredBy = "discoveredby"
+        case discoveredBy = "discovered_by"
         case name,symbol,number
     }
     
     static func decodeElementsFromData(from jsonData: Data) throws -> [Element] {
-        let response = try JSONDecoder().decode(Element.self, from: jsonData)
+        let response = try JSONDecoder().decode([Element].self, from: jsonData)
         return response
     }
 

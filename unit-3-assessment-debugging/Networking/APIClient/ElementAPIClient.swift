@@ -23,6 +23,24 @@ struct ElementAPIClient {
     static func getElementLargeImageURLString(from name: String) -> String {
         return "http://images-of-elements.com/\(name.lowercased()).jpg"
     }
+    
+    func getElements(completionHandler: @escaping (Result<[Element], AppError>) -> ())  {
+        NetworkHelper.manager.performDataTask(withUrl: elementURL, andMethod: .get) { (results) in
+            switch results {
+            case .failure(let error):
+                completionHandler(.failure(error))
+            case .success(let data):
+                do {
+                    let elementInfo = try Element.decodeElementsFromData(from: data)
+                    completionHandler(.success(elementInfo))
+                }
+                catch {
+                    completionHandler(.failure(.couldNotParseJSON(rawError: error)))
+                }
+                
+            }
+        }
+    }
 
     
     // MARK: - Private Properties and Initializers
