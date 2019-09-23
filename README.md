@@ -2,7 +2,7 @@
 ## Periodic Table: Debugging Exercise
 
 ## Instructions
-There are a number of issues with the project in this directory. There are crashes, errors, and features that do not work. These issues might occur in the Models, Views, and Controllers of the app. The git history will not help you, as the creator of this repository forgot to make meaningful commits as they created the app. They are sorry about that.
+There are a number of issues with the project in this directory. There are crashes, errors, and features that do not work. These issues might occur in the Models, Views, Controllers, and networking aspects of the app. The git history will not help you, as the creator of this repository forgot to make meaningful commits as they created the app. They are sorry about that.
 
 The objectives and details of the assignment are below.
 
